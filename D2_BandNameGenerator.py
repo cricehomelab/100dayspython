@@ -7,5 +7,3 @@ pet_name = input("What is the name of your favorite pet? ")
 #4. Combine the name of their city and pet and show them their band name.
 band_name = str(home_town + " " + pet_name)
 print("You've started a band called " + band_name)
-#5. Make sure the input cursor shows on a new line, see the example at:
-#   https://replit.com/@appbrewery/band-name-generator-end
