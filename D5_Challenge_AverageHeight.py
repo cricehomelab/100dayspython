@@ -54,7 +54,7 @@ students = 0
 
 # I did this in one for loop instead of 2 as shown in the solution.
 # for each item in the list it first takes that number and adds it to the sum of the total_height variable.
-# Second, it adds 1 to the total number of students. 
+# Second, it adds 1 to the total number of students.
 for student in student_heights:
   total_height += student
   students +=1
@@ -70,8 +70,8 @@ print(round(total_height / students))
 # easy way that's not allowed.
 # this is the same way to do this without a for loop.
 
-# howto save this to a variable.
-average_height_cheat = round(sum(student_heights / len(student_heights)))
+# how to save this to a variable.
+average_height_cheat = round(sum(student_heights) / len(student_heights))
 # how to print this out without a variable.
 print(round(sum(student_heights) / len(student_heights)))
 
