@@ -1,11 +1,11 @@
 #Step 5
 
 import random
-import D7_Hangman_words
-import D7_Hangman_art
+import D07_Hangman_words
+import D07_Hangman_art
 
 #TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
-word_list = D7_Hangman_words.word_list
+word_list = D07_Hangman_words.word_list
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
@@ -13,7 +13,7 @@ end_of_game = False
 lives = 6
 
 #TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-print(D7_Hangman_art.logo)
+print(D07_Hangman_art.logo)
 #Testing code
 #print(f'Pssst, the solution is {chosen_word}.')
 
@@ -58,4 +58,4 @@ while not end_of_game:
         print("You win.")
 
     #TODO-2: - Import the stages from hangman_art.py and make this error go away.
-    print(D7_Hangman_art.stages[lives])
+    print(D07_Hangman_art.stages[lives])
