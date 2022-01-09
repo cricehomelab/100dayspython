@@ -22,7 +22,7 @@ Things we need.
 
 '''
 
-import D9_Gavel
+import D09_Gavel
 
 
 
@@ -58,7 +58,7 @@ def determine_winner(list_of_bids):
 # putting this in for consistency
 clear_screen()
 # here is the ascii art that is part of the project.
-print(D9_Gavel.logo)
+print(D09_Gavel.logo)
 # getting the initial bid.
 get_bid()
 # while loop to get any additional bids.
