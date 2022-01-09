@@ -23,8 +23,8 @@ def caesar(start_text, shift_amount, cipher_direction):
 
 
 # TODO-1: Import and print the logo from art.py when the program starts.
-import D8_CaesarArt
-print(D8_CaesarArt.logo)
+import D08_CaesarArt
+print(D08_CaesarArt.logo)
 # TODO-4: Can you figure out a way to ask the user if they want to restart the cipher program?
 # e.g. Type 'yes' if you want to go again. Otherwise type 'no'.
 # If they type 'yes' then ask them for the direction/text/shift again and call the caesar() function again?
