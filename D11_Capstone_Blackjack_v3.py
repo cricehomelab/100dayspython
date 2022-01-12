@@ -33,6 +33,10 @@ a function in both the dealer and player turns.
 
 - game_start() is a function that will start the game.
 
+- added get_record() function to display how many wins, losses, and draws a user has.
+
+- I added variables to help to keep track of wins, loses, and draws as well.
+
 """
 
 import random
