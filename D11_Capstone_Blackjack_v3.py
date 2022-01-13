@@ -1,5 +1,7 @@
 """
 
+Play the finished game here https://replit.com/@cricehomelab/BlackJack?v=1
+
 The goal here is to make my Blackjack game more modular IE breaks down the components more into functions
 
 Components of a player turn
