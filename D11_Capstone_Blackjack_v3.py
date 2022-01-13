@@ -70,7 +70,7 @@ def dealer_turn(dealer):
         # if the player score is over 21 the dealer does not need to take action.
         # if player_score <= 21:
         # the dealer must hit if they are under or at 17 per the rules.
-        if sum(dealer) <= 17:
+        if sum(dealer) < 17:
             dealer.append(draw_card())
         # if the dealer hand is over 21 the dealer busts, but if they have an ace (11) it should recalculate their
         # score to account for the wild card.
@@ -157,9 +157,14 @@ def join_table():
     # draw 2 cards for the dealer
     dealer_hand.append(draw_card())
     dealer_hand.append(draw_card())
-    player_hand = player_turn(player_hand, dealer_hand)
-    dealer_hand = dealer_turn(dealer_hand)
-    return determine_winner(player_hand, dealer_hand)
+    if sum(dealer_hand) == 21:
+        return determine_winner(player_hand, dealer_hand)
+    elif sum(player_hand) == 21:
+        return determine_winner(player_hand, dealer_hand)
+    else:
+        player_hand = player_turn(player_hand, dealer_hand)
+        dealer_hand = dealer_turn(dealer_hand)
+        return determine_winner(player_hand, dealer_hand)
 
 
 def get_rules():
@@ -170,7 +175,7 @@ def get_rules():
     print("The the Ace can count as 11 or 1. They display as 11 until 21 is exceeded then count as 1.")
     print("Cards are not removed from the deck as they are drawn.")
     print("If you bust (go over 21) you lose.")
-    print("The dealer must hit below 17.")
+    print("The dealer must hit below a score of 17.")
     print("If the dealer score is the same as the player score there is a draw.")
     print("The objective is to have a score of 21, or be closer to 21 then the dealer without exceeding a score of 21.")
 
