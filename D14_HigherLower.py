@@ -1,6 +1,6 @@
 '''
 
-2022-01-22
+2022-01-21
 Initial thoughts: I had some trouble breaking out into smaller functions, so I ended up getting this to work I think with
 2 functions. One to run the game and one to check the answer. I am going to sleep on it from here, and see if fresh
 eyes give me a better view in the AM.
