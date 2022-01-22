@@ -1,8 +1,8 @@
 '''
 
 2022-01-22
-After thinking about it and looking for more things to break out the only real place I saw an opportunity was with
-getting the comparison for the game.
+After thinking about it and looking for more things to break out the only real places I saw an opportunity was with
+getting the comparison for the game, and for displaying the question for the user.
 
 '''
 
@@ -43,7 +43,16 @@ def get_people(count):
     return person_1, person_2
 
 
+def show_question(person_1, person_2):
+    """Displays the comparison question for the user."""
+    print(f"Does {person_1['name']} a {person_1['description']} from {person_1['country']} have more "
+          f"followers than...")
+    print(D14_Art.vs)
+    print(f"{person_2['name']} a {person_2['description']} from {person_2['country']}???")
+
+
 def play_game():
+    """main game loop for the higher lower game."""
     count = 0
     playing = True
     while playing:
@@ -60,10 +69,12 @@ def play_game():
         #    person_2 = random.choice(D14_Game_data.data)
         answering = True
         while answering:
-            print(f"Does {person_1['name']} a {person_1['description']} from {person_1['country']} have more "
-                  f"followers than...")
-            print(D14_Art.vs)
-            print(f"{person_2['name']} a {person_2['description']} from {person_2['country']}???")
+            # put this into the function show_question()
+            #print(f"Does {person_1['name']} a {person_1['description']} from {person_1['country']} have more "
+            #      f"followers than...")
+            #print(D14_Art.vs)
+            #print(f"{person_2['name']} a {person_2['description']} from {person_2['country']}???")
+            show_question(person_1, person_2)
             response = input('y for yes, n for no: \n')
             if response == 'y' or response == 'n':
                 win = check_answer(person_1, person_2, response)
