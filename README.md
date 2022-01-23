@@ -17,7 +17,7 @@ Text based applications:
   https://github.com/cricehomelab/100dayspython/blob/main/D15_CoffeeMachine.py
   This is a simulated coffee machine that was a challenge to create on Day 15 of the course. The challenge was to think through what a coin operated coffee machine would  need to 
   do from taking user input on what type of coffee a user would want, to checking if the correct ingredients are in stock, to taking coins, refunding over payments, "making" the 
-  coffee and updating its inventory. In this course we were given a list of requirements 
+  coffee, and finally, updating its inventory. In this course we were given a list of requirements 
   (https://github.com/cricehomelab/100dayspython/blob/main/D15_Coffee_Machine_Program_Requirements.pdf), and were cut loose after that. I found this to be a good challenge to 
   create this from the requirements with very little in the way of hints. I put the finished product here https://replit.com/@cricehomelab/CoffeeMaker?v=1 for an easy way of 
   seeing the finished product. 
