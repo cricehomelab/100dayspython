@@ -1,0 +1,37 @@
+I wanted to write down a few thoughts on what I have really liked from this course so far.
+
+I really like how we spent 15 days getting comfortable  with very basic concepts
+    - Loops and understanding when to use a certain type of loop.
+        - When to use while loops.
+        - When to use a for loop.
+        - I like that there was no push for using some of the more complex for loops. I know they are important later,
+        but just getting the basics of how they work and when to use both types has helped me feel more like I'm
+        standing on solid ground, and has allowed me to search out some of the more complex ways on my own and approach
+        them with a better understanding. For instance, I figured out how to use enumerate() from reading documentation
+        when I thought there should be a way of counting through my loop without declaring a counting variable in some
+        places.
+    - if/else statements and how to use them in a basic sense.
+        - this seems to be a lot of the bread and butter of coding, by specifying how to handle multiple different
+        options and adding options later.
+    - functions. I really like that we are learning these and how think about using them for different purposes the
+    coffee machine project was very helpful for figuring out the different functions I need to implement just going
+    off of the requirement sheet that was provided for the project. Most of the bullet points ended up being able to
+    be implemented in their own function.
+    - lists and dictionaries.
+        - Dictionaries have always been a struggle for me, and I feel like the coffee machine project helped me
+        understand these better.
+        - Iteration through a list or dictionary has been a challenge for me in the past, but I think with the amount
+        of repetition we have had with looping through lists or dictionaries I understand ways of doing this better.
+    - I think this has built a solid foundation without abstracting things too much at any given time, but abstracting
+    little by little to get us to the next step on the staircase.
+    - Slowly releasing the amount of instruction
+        - I like how day one is very hands-on step-by-step instruction compared to day 15 where it was more of a "here
+        are some instructions go make something" situation. This allowed me get detailed instruction on new stuff, but
+        let me have the reigns when I knew the concepts, and it was time to let me go and figure it out.
+
+What I hope to see.
+    - I would hope we continue to get the hand-holding for new concepts, but move more quickly into the "figure it out"
+    spaces in order to make our own discoveries. I've always learned best when I have to beat my head against the wall
+    especially in abstract thought. I remember being in school and taking math classes. I didn't have my best learning
+    from instruction, although it was very important, I learned best when I had to read the text myself and look line
+    by line at a solution and then have to apply it to a different problem with a similar solution path.
