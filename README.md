@@ -13,6 +13,7 @@ Text based applications:
   here and can even play it on https://replit.com/@cricehomelab/BlackJack?v=1 
   This is the first of the "Capstone" projects for the course. There is a "solution" video for this, but my answer varies significantly from the instructor and I was able to add a 
   few extra features like a score tally to see how many games you win, lose or draw. 
+  As a fun side mission I rebuilt Blackjack in using object-oriented programming to further cement my understanding of it https://replit.com/@cricehomelab/OOP-Blackjack?v=1
 - Coffee Machine:
   https://github.com/cricehomelab/100dayspython/blob/main/D15_CoffeeMachine.py
   This is a simulated coffee machine that was a challenge to create on Day 15 of the course. The challenge was to think through what a coin operated coffee machine would  need to 
