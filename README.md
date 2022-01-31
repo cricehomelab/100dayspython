@@ -3,6 +3,8 @@ This is my progress working through the 100 days of code python course on Udemy
 
 Here is a link to the course I am working through:
 https://www.udemy.com/course/100-days-of-code/learn/lecture/23154980#overview
+When I went to learn programming Python was one of the more recomended languages to start with, and this course was one of the most recommended resources I could find after
+browsing through different subreddits. So I decided this would be a good path to learning Python. 
 
 I wanted to highlight some of the challenges I am particularly proud of. 
 
