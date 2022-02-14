@@ -49,6 +49,11 @@ black.left(90)
 black.forward(210)
 
 
+def gamble(screen):
+    choice = screen.textinput("who will win?", "Which turtle will win?")
+    return choice
+
+
 def pick_turtle():
     number = random.randint(0, 5)
     if number == 0:
@@ -68,23 +73,61 @@ def pick_turtle():
 def check_winner(red, orange, yellow, green, blue, purple):
     positions = [red, orange, yellow, green, blue, purple]
     no_winner = True
-    for position in positions:
+    winner = 8
+    for num, position in enumerate(positions):
         if position == 300:
             no_winner = False
-    return no_winner
+            winner = num
+    return no_winner, winner
 
+# Initializing the screen.
+screen = Screen()
 
 def run_game(red, orange, yellow, green, blue, purple):
+    choice = gamble(screen)
     running = True
     while running:
-        running = check_winner(red.xcor(), orange.xcor(), yellow.xcor(), green.xcor(), blue.xcor(), purple.xcor())
+        check_list = list(check_winner(red.xcor(), orange.xcor(), yellow.xcor(), green.xcor(), blue.xcor(),
+                                       purple.xcor()))
+        running = check_list[0]
+        winner = check_list[1]
+        if winner != 8:
+            if winner == 0:
+                if choice == 'red':
+                    print("red wins, YOU WIN!")
+                else:
+                    print("red wins, you Lose...")
+            elif winner == 1:
+                if choice == 'orange':
+                    print("orange wins, YOU WIN!")
+                else:
+                    print("orange wins, you Lose...")
+            elif winner == 2:
+                if choice == 'yellow':
+                    print("yellow wins, YOU WIN!")
+                else:
+                    print("yellow wins, you Lose...")
+            elif winner == 3:
+                if choice == 'green':
+                    print("green wins, YOU WIN!")
+                else:
+                    print("green wins, you Lose...")
+            elif winner == 4:
+                if choice == 'blue':
+                    print("blue wins, YOU WIN!")
+                else:
+                    print("blue wins, you Lose...")
+            elif winner == 5:
+                if choice == 'purple':
+                    print("purple wins, YOU WIN!")
+                else:
+                    print("purple wins, you Lose...")
         pick_turtle()
 
 
 run_game(red=red, orange=orange, yellow=yellow, green=green, blue=blue, purple=purple)
 
-# Initializing the screen.
-screen = Screen()
+
 # Setting screen to exit on click
 screen.exitonclick()
 
